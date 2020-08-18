@@ -3,8 +3,13 @@ const { ApolloServer, gql } = require("apollo-server");
 const machines = [
   {
     id: "cc7ca35f-b415-45e1-8b72-0f92131904e0",
-    name: "Truck Engine",
+    name: "Truck",
     lastKnownPosition: { lat: "51.661519", lng: "6.4543203" },
+  },
+  {
+    id: "cfa3a6da-9b52-4e52-93a9-b0f876e9a108",
+    name: "Cooking Pot",
+    lastKnownPosition: { lat: "50.0379326", lng: "8.5599631" },
   },
 ];
 
@@ -12,17 +17,22 @@ const sensors = [
   {
     id: "5c3f0a37-494c-40a8-a5ce-65e26c4f24a8",
     name: "Truck Engine Temperature",
-    machine: "Truck Engine",
+    machine: "Truck",
   },
   {
     id: "a3184ee2-d07e-4bf6-8da3-9a0704f81b5e",
     name: "Truck Engine Noise",
-    machine: "Truck Engine",
+    machine: "Truck",
   },
   {
     id: "2f534c27-c3c9-4224-a26f-980aa9b70afb",
-    name: "Truck Engine Uptime",
-    machine: "Truck Engine",
+    name: "Cooking Pot Temperature",
+    machine: "Cooking Pot",
+  },
+  {
+    id: "bfac7b69-4f37-4510-8170-43620c1e5c07",
+    name: "Cooking Pot Conductivity",
+    machine: "Cooking Pot",
   },
 ];
 
